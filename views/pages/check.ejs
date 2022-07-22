@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Check your record</title>
+</head>
+<body>
+    <div class="container p-5">
+        <h1 class="text-center mb-5 text-uppercase text-muted"> Your stress level record </h1>
+        <div class="row align-items-center bg-light rounded py-3 m-3">
+            <h2 class="text-center"> Mr./Mrs. <%=results.username%> </h2>
+            <h3 class="text-center"> Stress Level : <b><%=results.stressLevel%></b> </h3>
+        </div>
+        <div style="display:grid;justify-content: center;"> 
+            <img src="data:image/png;base64,<%=results.image%>" alt="" width="350" height="350">
+            <button onclick="window.history.back()" class="m-3 py-2">Back</button>
+        </div>
+        
+    </div>
+</body>
+</html>
