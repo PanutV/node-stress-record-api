@@ -1,1 +1,1 @@
-# panut-stress-api
+# Node.js-stress-record-api
